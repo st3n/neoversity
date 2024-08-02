@@ -1,0 +1,52 @@
+https://dbdiagram.io/d/64c581aa02bd1c4a5ee9b566
+
+Table Genre {
+  id INT
+  name VARCHAR(100)
+}
+
+Table Certification {
+  id INT
+  name VARCHAR(10)
+}
+
+Table Director {
+  id INT
+  name VARCHAR(50)
+}
+
+Table Star {
+  id INT
+  name VARCHAR(50)
+}
+
+Table Movie {
+  id INT
+  name VARCHAR(250)
+  year INT
+  time INT
+  imdb FLOAT
+  votes INT
+  meta_score FLOAT
+  gross FLOAT
+  certification_id INT [ref: > Certification.id]
+  description TEXT
+}
+
+Table MovieGenre {
+  id INT
+  movie_id INT [ref: > Movie.id]
+  genre_id INT [ref: > Genre.id]
+}
+
+Table MovieDirector {
+  id INT
+  movie_id INT [ref: > Movie.id]
+  director_id INT [ref: > Director.id]
+}
+
+Table MovieStar {
+  id INT
+  movie_id INT [ref: > Movie.id]
+  star_id INT [ref: > Star.id]
+}
