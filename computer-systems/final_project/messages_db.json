@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "66af56e1f519780b6d282b67"
+  },
+  "date": "2024-08-04 10:24:33.562068",
+  "username": "st3n",
+  "message": "hello world"
+},
+{
+  "_id": {
+    "$oid": "66af83a2f519780b6d282b68"
+  },
+  "date": "2024-08-04 13:35:30.040136",
+  "username": "aynene",
+  "message": "ababahalamaha"
+}]
